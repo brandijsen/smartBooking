@@ -38,3 +38,7 @@ app.use("/api/admin", adminRoutes);
 
 import userRoutes from "./routes/user.routes.js";
 app.use("/api/users", userRoutes);
+
+import categoryRoutes from "./routes/category.routes.js";
+app.use("/api/categories", categoryRoutes);
+app.use("/uploads", express.static("uploads")); // per servire le immagini
